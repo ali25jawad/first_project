@@ -1,0 +1,520 @@
+
+
+/* font-family: "Ballo Paaji", cursive; */
+
+*{
+   padding: 0%;
+   margin: 0%;
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+   font-family: "Ballo chattan 2", cursive;
+   transition: all 0.2s ease-in-out;
+}
+body{
+   margin: 0%;
+   /* font-family:"open sans", sans serif; */
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5;
+   color: #212529;
+   text-align: left;
+   background-color: #fff;
+   overflow-x: hidden;
+   /* font-family:'Ballo paaji', cursive; */
+}
+
+/*============ Start Screen Responsive =================  */
+
+.container{
+   margin: 0 auto;
+   padding: 0 40px;
+}
+/* Big  */
+@media (min-width: 1200px) {
+   .container{
+      width: 1170px;
+   }
+}
+/* midium  */
+@media (min-width: 992px) {
+   .container{
+      width: 970px;
+   }
+}
+/* small  */
+@media (min-width: 780px) {
+   .container{
+      width: 750px;
+   }
+}
+
+/*============ End Screen Responsive =================  */
+
+
+
+/* Start Nav Bar  */
+.nav-bar{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 100000; 
+}
+.nav-bar .container{
+   display: flex;
+   justify-content: space-between;
+   border-bottom: solid 1px black;
+   height: 12vh;
+   align-items: center;
+}
+ .nav-bar .container .links ul {
+   display: flex;
+   gap: 2rem;
+   align-items: center;
+   flex-direction: row-reverse;
+   
+} 
+
+.nav-bar .container .links ul li a{
+   font-weight: bold;
+   color: #fff;
+   
+} 
+.nav-bar .container .links ul li a:hover{
+   color: #534688;
+}
+.nav-bar .container .logo a{
+   font-size: 30px;
+   font-weight: bold;
+   color: #fff;
+}
+.nav-bar .container .links ul li .home{
+   border: solid 3px #534688;
+   padding: 10px 20px;
+   background-color: #534688;
+   color: white;
+}
+.nav-bar .container .links ul li .home:hover{
+   
+   background-color: #fff;
+}
+
+/* Big  */
+@media (max-width: 1200px) {
+   
+   
+}
+/* midium  */
+@media (max-width: 992px) {
+  
+   }
+
+/* small  */
+@media (max-width: 780px) {
+   .nav-bar .container .links ul{
+      display: none;
+   }
+   
+}
+
+/* End Nav Bar  */
+
+
+
+/* ============== Start Landing Pag===========  */
+.landing-pag{
+   background-image: url("./imges/cropped-bizz-inside-header-bg.jpg");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: relative;
+}
+.landing-pag .container{
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   z-index: 10000;
+   position: relative;
+   width: fit-content;
+}
+.landing-pag .background{
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+}
+.landing-pag .container h1{
+   color: #444;
+   font-size: 55px;
+}
+.landing-pag .container .my-name{
+   color: #212529e6;
+}
+.landing-pag .container p{
+   font-size: 25px;
+   color: #111;
+   letter-spacing: 6px;
+   opacity: 0.8;
+   margin-bottom: 20px;
+}
+.landing-pag .container button{
+   border: solid 3px #534688;
+   padding: 10px 20px;
+   background-color: #534688;
+   color: white;
+   border-radius: 20px;
+   width: 190px;
+   cursor: pointer;
+}
+.landing-pag .container button:hover{
+   color: #534688;
+   background:#fff;
+}
+/* Big  */
+@media (max-width: 1200px) {
+   
+   
+}
+/* midium  */
+@media (max-width: 992px) {
+  
+   }
+
+/* small  */
+@media (max-width: 780px) {
+   .landing-pag .container{
+      text-align: center;
+      align-items: center;
+   }
+   .landing-pag .container h1{
+      font-size: 40px;
+   }
+}
+
+/* ============== End Landing Pag===========  */
+
+
+/* background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%); */
+
+/* ============== Start Abuot=========== */
+
+.abuot .container{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 7rem;
+}
+.abuot .container .img-container{
+   width: 250px;
+
+}
+.abuot .container .img-container img{
+   width: 100%;
+}
+
+.abuot .container .content h3{
+   font-size: 15px;
+   color: #999;
+   letter-spacing: 2px;
+   margin-bottom: 10px;
+   font-weight: 100
+}
+.abuot .container .content h2{
+   color:#695aa6 ;
+   font-size: 30px;
+   margin-bottom: 1rem;
+}
+.abuot .container .content p{
+   font-size: 15px;
+   color: #999;
+   line-height: 1.6;
+   margin-bottom: 2rem;
+   font-weight: 100
+
+}
+
+.abuot .container .content button{
+   border: solid 3px #534688;
+   padding: 10px 20px;
+   background-color: #534688;
+   color: white;
+   border-radius: 20px;
+   width: 150px;
+   cursor: pointer;
+}
+.abuot .container .content button:hover{
+   color:#534688;
+   background-color: white;
+}
+/* Big  */
+@media (max-width: 1200px) {
+   
+   
+}
+/* midium  */
+@media (max-width: 992px) {
+  
+   }
+
+/* small  */
+@media (max-width: 780px) {
+   .abuot .container{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: none;
+      justify-items: center;
+   }
+   .abuot .container .content{
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: none;
+      justify-items: center;
+   }
+}
+
+/* ============== End Abuot=========== */
+
+
+
+/* ============== Start portfolio===========  */
+.portfolio .container{
+   text-align: center;
+}
+.portfolio .container h3{
+   font-size: 32px;
+   color: #695aa6;
+   font-family: "Ballo Paaji", cursive;
+}
+.portfolio .container p{
+   font-size: 14px;
+   font-weight: 100;
+   margin-bottom: 30px;
+}
+.portfolio .container .box-container{
+   display: flex;
+   gap: 2rem;
+   justify-content: center;
+   flex-wrap: wrap;
+
+}
+.portfolio .container .box-container .box{
+}
+.portfolio .container .box-container .box img{
+   width: 100%;
+   height: 100%;
+}
+/* العنصر الاب */
+.portfolio .container .box-container .parnt-box{
+   position: relative;
+   width: 30%;
+}
+.portfolio .container .box-container .parnt-box:hover .box-new{
+   opacity: 1;
+   pointer-events: auto;
+}
+
+
+/* العنصر الجديد */
+.portfolio .container .box-container .box-new{
+   opacity: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: #e1dfedc1;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   pointer-events: none;
+}
+.portfolio .container .box-container .box-new h4{
+   font-size: 25px;
+   font-weight: 500;
+   color: #695aa6;
+   font-family: "Baloo Paaji",cursive; 
+   margin: 0.5rem;
+}
+
+.portfolio .container .box-container .box-new a{
+   color: #000;
+}
+/* Big  */
+@media (max-width: 1200px) {
+   
+   
+}
+/* midium  */
+@media (max-width: 992px) {
+  
+   }
+
+/* small  */
+@media (max-width: 780px) {
+   .portfolio .container .box-container{
+      display: flex;
+      flex-direction: column;
+   }
+   .portfolio .container .box-container .parnt-box{
+      width: 100%;
+   }
+   .portfolio .container .box-container .box-new{
+      opacity: 1;
+      background-color: #e1dfedc1;
+   }
+   .portfolio .container .box-container .box-new h4{
+      font-weight: bold;
+     
+   }
+   
+   .portfolio .container .box-container .box-new a{
+      font-weight: 500;
+   }
+}
+
+/* ============== End portfolio===========  */
+
+/* ============== Start Blue section===========  */
+
+.blue-section{
+   margin-top: 4rem;
+   margin-bottom: 4rem;
+   background-color: #695aa6;
+   padding-top: 3rem;
+   padding-bottom: 3rem;
+}
+.blue-section .container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.blue-section .container .left p{
+   color: #fff;
+   font-size: 21px;
+}
+.blue-section .container .left .text-first{
+   font-family:calc(Ballo);
+}
+.blue-section .container .right button{
+   border: solid 3px #fff;
+   padding: 10px 20px;
+   background-color: #fff;
+   color: #534688;
+   border-radius: 20px;
+   width: 150px;
+   cursor: pointer;
+   font-size: 20px;
+}
+/* Big  */
+@media (max-width: 1200px) {
+   
+   
+}
+/* midium  */
+@media (max-width: 992px) {
+  
+   }
+
+/* small  */
+@media (max-width: 780px) {
+   .blue-section .container{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 3rem;
+   }
+}
+
+/* ============== End Blue section===========  */
+
+
+
+/*=========== Start Testimolnial============= */
+
+.testi-section .container{
+   text-align: center;
+   margin-bottom: 5rem;
+}
+.testi-section .container h5{
+   font-size: 14px;
+   margin-bottom: 20px;
+   font-weight: 400;
+   opacity: 0.6;
+   letter-spacing: 0.6px;
+}
+.testi-section .container h3{
+   font-size: 32px;
+   font-weight: 500;
+   color: #695aa6;
+   margin-bottom: 3rem;
+   font-weight: bold;
+   font-family:'Ballo paaji', cursive !important; 
+}
+.testi-section .container .parent-item {
+   display: flex;
+   gap: 3rem;
+   justify-content: center;
+}
+
+.testi-section .container .parent-item .first{
+   border: solid 1px #534688;
+   padding: 30px;
+   display: flex;
+   flex-direction: row-reverse;
+   width: 50%;
+   align-items: center;
+   position: relative;
+   padding-left: 55px;
+}
+
+.testi-section .container .parent-item .first .img-container{
+   width:70px;
+   position: absolute;
+   left: -35px;
+}
+
+.testi-section .container .parent-item .first .img-container img{
+   width: 100%;
+   
+}
+.testi-section .container .parent-item .first .text{
+   text-align: start;
+}
+/* Big  */
+@media (max-width: 1200px) {
+   
+   
+}
+/* midium  */
+@media (max-width: 992px) {
+  
+   }
+
+/* small  */
+@media (max-width: 780px) {
+  .testi-section .container .parent-item{
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+  .testi-section .container .parent-item .first{
+   width: 100%;
+  }
+  .testi-section .container .parent-item .first .img-container{
+   left: 50%;
+   bottom: -40px;
+   transform: translate(-50%);
+  }
+}
+
+/*=========== End Testimolnial============== */
